@@ -1,0 +1,769 @@
+*{
+    background-color: rgb(35, 32, 32);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*  
+
+        Navagation
+
+
+*/
+nav{
+    margin: 1%;
+    margin-bottom: 10%;
+    color: #CEB7B3;
+    position: sticky;
+    padding: 0 2rem;
+}
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #F7B2AD;
+    font-size: 1rem;
+}
+a:hover{
+    color: #CEB7B3;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: sticky;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+     color: #F7B2AD;
+     font-size: 1.5rem;
+     cursor: pointer;
+     display: none;
+}
+
+.action_btn{
+    
+    background-color: #F7B2AD;
+    color: #B7B7B7;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+    
+}
+.action_btn:hover {
+    scale: 1.05;
+    color: white;
+}
+
+.action_btn:active{
+    scale: 0.95;
+}
+.dropdown_menu{
+    display: none;
+    position: fixed;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(84, 77, 77, 0.103);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.dropdown_menu.open{
+    height: 240px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+/*           */
+
+#intro{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0%,-30%);
+}
+#intro .header{
+    color: #CEB7B3;
+    font-size: 76px;
+    border: none !important;
+    
+}
+
+#intro .subHeader{
+    color: #CEB7B3;
+    text-align: center;
+    padding: 1%;
+    font-size: 37px;
+}
+
+#intro .bio{
+    color: #B7B7B7;
+    text-align: center;
+    width: 30%;
+    font-size: 25px;
+    padding-bottom: 2%;
+
+}
+#intro .connect a{
+    color: #F7B2AD;
+    padding: 20px 30px;
+    border: solid;
+    border-width: 3px;
+    border-color: #F7B2AD;
+    border-radius: 100px;
+    height: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#intro .image img{
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+
+/*----------- about -------------------*/
+
+
+#about{
+    position: absolute;
+    padding-top: 2%;
+}
+.about_title{
+    color: #CEB7B3;
+    font-size: 50px;
+    margin-left: 50%;
+    top: 125%;
+    left: 34.5%;
+    transform: translate(-50%,-50%);
+    padding: 2%;
+}
+.about_bio {
+    font-size: 22px;
+    color: #B7B7B7;
+    text-align: left;
+    width: 30%;
+    margin-left: 46%;
+    top: 125%;
+    left: 34.5%;
+    transform: translate(-50%,-50%);
+    padding-bottom: 2%;
+
+}
+.skills{
+    font-size: 25px;
+    color: #F7B2AD;
+    text-align: left;
+    width: 30%;
+    margin-left: 46%;
+    top: 125%;
+    left: 34.5%;
+    transform: translate(-50%,-50%);
+    
+}
+.end_of_about{
+    color: #B7B7B7;
+    font-size: 20px;
+    text-align: left;
+    width: 30%;
+    margin-left: 46%;
+    top: 125%;
+    left: 34.5%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/*----------- experience -------------------*/
+
+
+#experience .experiences_title{
+    color: #CEB7B3;
+    font-size: 50px;
+    padding-top: 5%;
+    margin-left: 2%;
+    transform: translate(470px,700px);
+}
+#experience .list_of_experiences{
+    display: inline-block;
+    padding: 4% 5%;
+    vertical-align: top;
+    transform: translate(470px,700px);
+    color: #F7B2AD;
+    cursor: pointer;
+    font-size: 20px;
+}
+#experience .list_of_experiences button{
+    color: #F7B2AD;
+    padding: 5%;
+    padding-bottom: 14%;
+    border: none;
+    font-size: 20px;
+}
+#experience .job_discriptions{
+    color: #F7B2AD;
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: top;
+    font-size: 20px;
+    transform: translate(470px,700px);
+    margin-top: 4%;
+}
+
+.job_discriptions .cashier {
+    color: #B7B7B7;
+    font-size: 25px;
+}
+.job_discriptions .cashier .date{
+    color: #CEB7B3;
+    display: flex; 
+    padding-left: 3%; 
+    font-size:17px;
+}
+.job_discriptions .cashier div {
+    color: #B7B7B7;
+    padding-bottom: 2%;
+    width: 60%;
+    font-size: 20px;
+    display: flex;
+}
+.job_discriptions .cashier i{
+    color:#F7B2AD;
+    margin-top:1.5%;
+    margin-right: 3%;
+    font-size: 13px;
+}
+.job_discriptions .ta{
+    color: #B7B7B7;
+    font-size: 25px;
+    padding-bottom: 5%;
+}
+.job_discriptions .ta .date{
+    color: #CEB7B3;
+    display: flex; 
+    padding-left: 3%; 
+    font-size:17px;
+}
+
+
+/*----------- projects -------------------*/
+
+.projects_title{
+    color: #CEB7B3;
+    position: absolute;
+    top: 270%;
+    left: 26.5%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    padding: 10%;
+}
+
+
+/*----------------Media---------------------*/
+
+@media(max-width: 2700px){
+    #intro{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0%,-20%);
+    }
+    #about{
+        position: absolute;
+        margin-top: 5%;
+    }
+    #experience .experiences_title{
+        padding-top: 10%;
+        transform: translate(500px,700px);
+    }
+}
+@media(max-width: 2000px){
+    #intro{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0%,-15%);
+    }
+    #about{
+        position: absolute;
+        margin-top: 5%;
+    }
+    #experience .experiences_title{
+        padding-top: 10%;
+        transform: translate(470px,700px);
+    }
+}
+@media(max-width: 1800px){ 
+    #intro{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0%,-10%);
+    }
+    #intro .subHeader{
+        color: #CEB7B3;
+        text-align: center;
+        padding: 2%;
+        font-size: 34px;
+        width: 800px;
+    }
+    #intro .bio{
+        color: #B7B7B7;
+        text-align: center;
+        width: 50%;
+        font-size: 25px;
+        padding-bottom: 7%;
+    }
+    #intro .connect a{
+        color: #F7B2AD;
+        padding: 20px 30px;
+        border: solid;
+        border-width: 3px;
+        border-color: #F7B2AD;
+        border-radius: 100px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #about{
+        position: absolute;
+        margin-top: 10%;
+    }
+    .about_title{
+        color: #CEB7B3;
+        font-size: 50px;
+        margin-left: 40%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-50%,-50%);
+        padding: 2%;
+    }
+    .about_bio {
+        font-size: 22px;
+        color: #B7B7B7;
+        text-align: left;
+        width: 40%;
+        margin-left: 40%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-50%,-50%);
+        padding-bottom: 2%;
+    
+    }
+    .skills{
+        font-size: 25px;
+        color: #F7B2AD;
+        text-align: left;
+        width: 30%;
+        margin-left: 40%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-50%,-50%);
+        
+    }
+    .end_of_about{
+        color: #B7B7B7;
+        font-size: 20px;
+        text-align: left;
+        width: 40%;
+        margin-left: 40%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-50%,-50%);
+    }
+
+
+    #experience .experiences_title{
+        padding-top: 10%;
+        transform: translate(200px,700px);
+    }
+    #experience .list_of_experiences{
+        transform: translate(200px,700px);
+    }
+    #experience .job_discriptions{
+       
+        transform: translate(200px,700px);
+    }
+    
+    
+}
+@media(max-width: 1700px){
+    #experience .list_of_experiences{
+        display: none;
+    }
+    #experience .job_discriptions{
+       
+        transform: translate(250px,700px);
+    }
+    #experience .experiences_title{
+        padding-top: 10%;
+        transform: translate(145px,700px);
+    }
+}
+@media(max-width: 1300px){
+    #intro{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0%,-5%);
+    }
+    #intro .header{
+        color: #CEB7B3;
+        font-size: 60px;
+    }
+    #intro .subHeader{
+        color: #CEB7B3;
+        text-align: center;
+        padding: 2%;
+        font-size: 34px;
+        width: 700px;
+    }
+    #intro .bio{
+        color: #B7B7B7;
+        text-align: center;
+        width: 50%;
+        font-size: 25px;
+        padding-bottom: 7%;
+    }
+    #intro .connect a{
+        color: #F7B2AD;
+        padding: 20px 30px;
+        border: solid;
+        border-width: 3px;
+        border-color: #F7B2AD;
+        border-radius: 100px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #about{
+        position: absolute;
+        margin-top: 10%;
+    }
+    .about_title{
+        color: #CEB7B3;
+        font-size: 45px;
+        margin-left: 50%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-80%,0%);
+    }
+    .about_bio {
+        font-size: 22px;
+        color: #B7B7B7;
+        text-align: left;
+        width: 50%;
+        top: 50%;
+        left: 34.5%;
+        transform: translate(-35%,0%);
+        padding-bottom: 2%;
+    
+    }
+    .skills{
+        font-size: 25px;
+        color: #F7B2AD;
+        text-align: left;
+        width: 60%;
+        margin-left: 40%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-30%,3%);
+        
+    }
+    .end_of_about{
+        color: #B7B7B7;
+        font-size: 20px;
+        text-align: left;
+        width: 50%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-35%,0%);
+    }
+    #experience .experiences_title{
+        padding-top: 10%;
+        font-size: 45px;
+        transform: translate(100px,700px);
+    }
+    #experience .list_of_experiences{
+        transform: translate(100px,700px);
+        display: none;
+    }
+    #experience .job_discriptions{
+       
+        transform: translate(150px,700px);
+    }
+    .job_discriptions .ta{
+        font-size: 25px;
+    }
+    .job_discriptions .cashier {
+        
+        font-size: 25px;
+    }
+    .job_discriptions .cashier div {
+        padding-bottom: 2%;
+        width: 50%;
+        font-size: 20px;
+        display: flex;
+    }
+}
+@media(max-width: 1000px){
+    #intro{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0%,0%);
+    }
+    #intro .image img{
+        border-radius: 50%;
+        width: 300px;
+    }
+    #intro .header{
+        color: #CEB7B3;
+        font-size: 45px;
+    }
+    #intro .subHeader{
+        color: #CEB7B3;
+        text-align: center;
+        padding: 2%;
+        font-size: 27px;
+        width: 500px;
+    }
+    #intro .bio{
+        color: #B7B7B7;
+        text-align: center;
+        width: 50%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+    #intro .connect a{
+        color: #F7B2AD;
+        padding: 20px 20px;
+        border: solid;
+        border-color: #F7B2AD;
+        border-radius: 100px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    #about{
+        position: absolute;
+        margin-top: 15%;
+    }
+    .about_title{
+        color: #CEB7B3;
+        font-size: 37px;
+        margin-left: 50%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-80%,0%);
+    }
+    .about_bio {
+        font-size: 20px;
+        color: #B7B7B7;
+        text-align: left;
+        width: 70%;
+        top: 50%;
+        left: 34.5%;
+        transform: translate(-35%,0%);
+        padding-bottom: 2%;
+    
+    }
+    .skills{
+        font-size: 20px;
+        color: #F7B2AD;
+        text-align: left;
+        width: 60%;
+        margin-left: 40%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-30%,3%);
+        
+    }
+    .end_of_about{
+        color: #B7B7B7;
+        font-size: 20px;
+        text-align: left;
+        width: 60%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-40%,0%);
+    }
+    #experience .experiences_title{
+        padding-top: 10%;
+        font-size: 37px;
+        transform: translate(60px,700px);
+    }
+    #experience .job_discriptions{
+       
+        transform: translate(70px,700px);
+    }
+    .job_discriptions .ta{
+        font-size: 20px;
+        width: 60%;
+    }
+    .job_discriptions .cashier {
+        
+        font-size: 20px;
+    }
+    .job_discriptions .cashier div {
+        padding-bottom: 2%;
+        width: 70%;
+        font-size: 17px;
+    }
+    .job_discriptions .ta .date{
+        padding-left: 5%; 
+    }
+}
+@media(max-width: 600px){
+    #intro{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0%,0%);
+    }
+    #intro .image img{
+        border-radius: 50%;
+        width: 300px;
+    }
+    #intro .header{
+        color: #CEB7B3;
+        font-size: 40px;
+        
+    }
+    #intro .subHeader{
+        color: #CEB7B3;
+        text-align: center;
+        padding: 2%;
+        font-size: 27px;
+        width: 400px;
+    }
+    #intro .bio{
+        color: #B7B7B7;
+        text-align: center;
+        width: 60%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    
+    }
+    #intro .connect a{
+        color: #F7B2AD;
+        padding: 20px 20px;
+        border: solid;
+        border-color: #F7B2AD;
+        border-radius: 100px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    #about{
+        position: absolute;
+        margin-top: 30%;
+    }
+    .about_title{
+        color: #CEB7B3;
+        font-size: 37px;
+        margin-left: 50%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-80%,0%);
+    }
+    .about_bio {
+        font-size: 20px;
+        color: #B7B7B7;
+        text-align: left;
+        width: 70%;
+        top: 50%;
+        left: 34.5%;
+        transform: translate(-35%,0%);
+        padding-bottom: 2%;
+    
+    }
+    .skills{
+        font-size: 20px;
+        color: #F7B2AD;
+        text-align: left;
+        width: 60%;
+        margin-left: 40%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-30%,3%);
+        
+    }
+    .end_of_about{
+        color: #B7B7B7;
+        font-size: 20px;
+        text-align: left;
+        width: 60%;
+        top: 125%;
+        left: 34.5%;
+        transform: translate(-40%,0%);
+    }
+    #experience .experiences_title{
+        padding-top: 10%;
+        font-size: 37px;
+        transform: translate(50px,700px);
+    }
+    .job_discriptions .ta{
+        font-size: 20px;
+        width: 80%;
+    }
+    .job_discriptions .cashier div {
+        padding-bottom: 2%;
+        width: 80%;
+        font-size: 17px;
+    }
+}

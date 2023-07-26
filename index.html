@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Ali Saeed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e6fd862517.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo"><a> Ali Saeed</a></div>
+        <ul class="links">
+          <li><a href="#intro">/ Home</a></li>
+          <li><a href="#about">/ About</a></li>
+          <li><a href="#experiences">/ Experiences</a></li>
+          <li><a href="#projects">/ Projects</a></li>
+        </ul>
+        <a href="#" class="action_btn">Menu</a>
+        <div class="toggle_btn">
+          <i class="fa fa-light fa-gear"></i>
+        </div>
+        <div class="dropdown_menu">
+          <li><a href="#intro">/ Home</a></li>
+          <li><a href="#about">/ About</a></li>
+          <li><a href="#experiences">/ Experiences</a></li>
+          <li><a href="#projects">/ Projects</a></li>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa fa-light fa-gear fa-spin"
+          : "fa fa-light fa-gear";
+      };
+    </script>
+
+
+    <div id="intro">
+      <div class="image">
+        <img src="/images/self_protrait.jpeg">
+      </div>
+
+      <div class=" header">
+          Hey, I'm
+          <p;  style="color: #F7B2AD;">Ali</p;>
+          .
+      </div>
+
+      <div class="subHeader">
+        "for every action there is an equal and oppsite reaction" - Issac Newton
+      </div>
+      <div class="bio">
+        I am an aspiring software engineer with great interest full-stack development, AI/Machine Learning, Cloud Services and more. My goal is to contribute meaningfully to the advancement of technology by creating innovative solutions
+      </div>
+      <div class="connect">
+        <a herf="asaee2@uic.edu">connect</a>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="about_title">
+        About me 
+      </div>
+      <div class="about_bio">
+            I am currently a senior at the <a herf="https://www.uic.edu/" style="color: #F7B2AD;font-size: 22px;">University of Illinois at Chicago</a>. Simultaneously, I am a <a style="color: #F7B2AD;font-size: 22px;">Teacher Assistaint</a> for UIC's data structure course. Helping students as a teacher assistaint has improved my technical and problem solving skills.
+      </div>
+      <div class="skills">
+          : Tech Skills : 
+          <ul>
+            <div class="c" style="color: #B7B7B7;">
+              <il style="padding-right: 22%;">C++</il>
+              <il>C</il>
+            </div>
+            <div class="java" style="color: #B7B7B7">
+              <il style="padding-right: 23%;">Java</il>
+              <il>Python</il>
+            </div>
+            <div class="web" style="color: #B7B7B7">
+              <il style="padding-right: 5%;">HTML & CSS</il>
+              <il>Javascript ES6+</il>
+            </div>
+            <div class="f#" style="color: #B7B7B7">
+              <il style="padding-right: 10%;">F#</il>
+            </div>
+          </ul>
+      </div>
+      <div class="end_of_about">
+        Outside of school, I enjoy furthuring my knowledge on the different types technologcal advancement and taking care of my physical health by consistently working out at the gym.
+      </div>
+    </div>
+
+    
+    <div id="experience">
+      <div class="experiences_title"> Experiences</div>
+      <div class="alining">
+        <div class="list_of_experiences">
+            <button>
+              University of Illinois Chicago
+            </button>
+            <button>
+              Alamal alarabi
+            </button>
+        </div>
+        <div class="job_discriptions">
+          <div class="ta">
+            Data Structure Teacher Assistance @ <span style="color: #F7B2AD;">University of Illinois Chicago</span> 
+            <div class="date">
+              August 2023 - present
+            </div>
+          </div>
+          <div class="cashier">
+            Cashier @ <span style="color: #F7B2AD;">Alamal Alarabi</span>
+            <div class="date">sept 2018 - July 2021</div>
+            <ul>
+              <div class="one">
+                <i class="fa fa-solid fa-spa"></i>
+                <li>
+                  Provided exceptional customer service by addressing inquiries and resolving complaints, resulting in high satisfaction ratings.
+                </li>
+              </div>
+                <div class="2">
+                    <i class="fa fa-solid fa-spa"></i>
+                    <li>
+                      Demonstrated knowledge of procedures and policies, effectively answering customers' questions and providing necessary information.
+                    </li>
+                </div>
+                <div class="3">
+                  <i class="fa fa-solid fa-spa" ></i>
+                  <li>
+                    Ensured shelves were stocked with merchandise and clearly marked with prices to streamline the shopping experience for customers.
+                  </li>
+                </div>
+                <div class="4">
+                  <i class="fa fa-solid fa-spa"></i>
+                  <li>
+                    Efficiently managed company bills using various payment methods including cash, vouchers, and checks.
+                  </li>
+                </div>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+    <div id="projects">
+      <div class="projects_title">
+        Projects
+      </div>
+    </div>
+    <!-- https://animate.style/ -->
+  </body>
+</html>
