@@ -304,11 +304,51 @@ a:hover{
     color: #CEB7B3;
     position: absolute;
     top: 270%;
-    left: 26.5%;
+    left: 18.5%;
     transform: translate(-50%,-50%);
     font-size: 50px;
-    padding: 10%;
+    padding-bottom: 25%;
 }
+.containers_for_projects{
+    position: absolute;
+    border-width: 100%;
+    top: 270%;
+    left: 18.5%;
+    transform: translate(-50%,-50%);
+    color: #B7B7B7;
+}
+.project_lists{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap:100px;
+    margin-left: 50%;
+}
+.portfilio_project{
+    padding: 50px;
+    border: 3px solid #B7B7B7;
+}
+.java_project{
+    padding: 50px;
+    border: 3px solid #B7B7B7;
+}
+.animation_project{
+    padding: 50px;
+    border: 3px solid #B7B7B7;
+}
+.wumpus_project{
+    padding: 50px;
+    border: 3px solid #B7B7B7;
+}
+.project_heading{
+    font-size: larger;
+    color: #CEB7B3;
+}
+.project_discription{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    width: 80%;
+}
+
 
 
 /*----------------Media---------------------*/
