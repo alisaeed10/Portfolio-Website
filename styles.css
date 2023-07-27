@@ -326,22 +326,31 @@ a:hover{
 .portfilio_project{
     padding: 50px;
     border: 3px solid #B7B7B7;
+    border-radius: 20px 20px;
 }
 .java_project{
     padding: 50px;
     border: 3px solid #B7B7B7;
+    border-radius: 20px 20px;
 }
 .animation_project{
     padding: 50px;
     border: 3px solid #B7B7B7;
+    border-radius: 20px 20px;
 }
 .wumpus_project{
     padding: 50px;
     border: 3px solid #B7B7B7;
+    border-radius: 20px 20px;
 }
 .project_heading{
     font-size: larger;
     color: #CEB7B3;
+}
+.project_dates{
+    font-size: small;
+    margin-left: 2%;
+    padding-top: 1%;
 }
 .project_discription{
     padding-top: 3%;
