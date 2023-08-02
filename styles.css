@@ -153,7 +153,7 @@ a:hover{
 #intro .bio{
     color: #B7B7B7;
     text-align: center;
-    width: 30%;
+    width: 40%;
     font-size: 25px;
     padding-bottom: 2%;
 
@@ -166,7 +166,7 @@ a:hover{
     border-color: #F7B2AD;
     border-radius: 100px;
     height: 10px;
-    font-size: 30px;
+    font-size: 25px;
     cursor: pointer;
 }
 #intro .image img{
@@ -442,16 +442,16 @@ a:hover{
         transform: translate(200px,700px);
     }
     #experience .list_of_experiences{
-        transform: translate(200px,700px);
+        display: none;
     }
     #experience .job_discriptions{
-        transform: translate(200px,700px);
+        transform: translate(350px,700px);
     }
     #projects .projects_title{
         transform: translate(-35%,150%);
     }
     #projects .containers_for_projects{
-        transform: translate(-25%,118%);
+        transform: translate(-28%,118%);
     }
     
 }
