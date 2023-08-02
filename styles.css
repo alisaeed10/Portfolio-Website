@@ -14,7 +14,6 @@ nav{
     margin: 1%;
     margin-bottom: 10%;
     color: #CEB7B3;
-    position: sticky;
     padding: 0 2rem;
 }
 .navbar {
@@ -47,84 +46,22 @@ a:hover{
 .navbar .links{
     display: flex;
     gap: 2rem;
+    margin-right: 35%;
 }
-
-.navbar .toggle_btn{
-     color: #F7B2AD;
-     font-size: 1.5rem;
-     cursor: pointer;
-     display: none;
+.navbar .links2{
+    display: flex;
+    gap: 2rem;
+    margin-right: 35%;
 }
-
-.action_btn{
-    
-    background-color: #F7B2AD;
-    color: #B7B7B7;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: scale .2 ease;
-    
-}
-.action_btn:hover {
-    scale: 1.05;
-    color: white;
-}
-
-.action_btn:active{
-    scale: 0.95;
-}
-.dropdown_menu{
-    display: none;
+.navbar .soical_links{
+    margin-left: 60%;
     position: fixed;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background: rgba(84, 77, 77, 0.103);
-    backdrop-filter: blur(15px);
-    border-radius: 5px;
-    overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
-}
-.dropdown_menu.open{
-    height: 240px;
-}
-.dropdown_menu li{
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.dropdown_menu .action_btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
-@media(max-width: 992px){
-    .navbar .links,
-    .navbar .action_btn{
-        display: none;
-    }
-    .navbar .toggle_btn{
-        display: block;
-    }
-    .dropdown_menu{
-        display: block;
-    }
-}
 
-@media(max-width: 576px){
-    .dropdown_menu{
-        left: 2rem;
-        width: unset;
-    }
-}
+
+
+
 
 
 /*           */
@@ -590,6 +527,9 @@ a:hover{
     }
 }
 @media(max-width: 1000px){
+    .navbar .links{
+        display: none;
+    }
     #intro{
         display: flex;
         position: relative;
@@ -710,6 +650,10 @@ a:hover{
     }
 }
 @media(max-width: 600px){
+    .navbar .links{
+        display: none;
+    }
+
     #intro{
         display: flex;
         position: relative;

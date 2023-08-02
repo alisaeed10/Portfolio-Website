@@ -13,7 +13,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/favicon_io/site.webmanifest">
   </head>
+
+
   <body>
+
+
     <nav>
       <div class="navbar">
         <div class="logo"><a> Ali Saeed</a></div>
@@ -23,28 +27,17 @@
           <li><a href="#experience">/ experience</a></li>
           <li><a href="#projects">/ Projects</a></li>
         </ul>
-        <a href="#" class="action_btn">Menu</a>
-        <div class="toggle_btn">
-          <i class="fa fa-light fa-gear"></i>
+        <div class="soical_links">
+          <ul class="links2">
+            <li><a href="mailto: asaee2@uic.edu"><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/ali-saeed-b5b113204/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/alisaeed10"><i class="fa-brands fa-github"></i></a></li>
+            
+          </ul>
         </div>
-        <div class="dropdown_menu">
         </div>
       </div>
     </nav>
-    <script>
-      const toggleBtn = document.querySelector(".toggle_btn");
-      const toggleBtnIcon = document.querySelector(".toggle_btn i");
-      const dropDownMenu = document.querySelector(".dropdown_menu");
-
-      toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open");
-        const isOpen = dropDownMenu.classList.contains("open");
-
-        toggleBtnIcon.classList = isOpen
-          ? "fa fa-light fa-gear fa-spin"
-          : "fa fa-light fa-gear";
-      };
-    </script>
 
 
     <div id="intro">
