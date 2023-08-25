@@ -55,7 +55,7 @@ a:hover{
 }
 .navbar .soical_links{
     margin-left: 60%;
-    position: fixed;
+    position: absolute;
 }
 
 
